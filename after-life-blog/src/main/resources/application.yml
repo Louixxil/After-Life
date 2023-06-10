@@ -1,0 +1,13 @@
+server:
+  port: 9991
+  servlet:
+    context-path: /blog
+  address: 192.168.15.1
+spring:
+  application:
+    name: blogapp
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+    loadbalancer:
+      enabled: true

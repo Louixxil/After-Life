@@ -1,0 +1,8 @@
+server:
+  port: 9992
+  servlet:
+    context-path: /user
+  address: 192.168.15.1
+spring:
+  application:
+    name: userapp
