@@ -2,7 +2,14 @@ server:
   port: 9992
   servlet:
     context-path: /user
-  address: 192.168.15.1
 spring:
   application:
-    name: userapp
+    name: userApp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/after_life?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

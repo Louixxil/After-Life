@@ -2,12 +2,19 @@ server:
   port: 9991
   servlet:
     context-path: /blog
-  address: 192.168.15.1
 spring:
   application:
-    name: blogapp
+    name: blogApp
   cloud:
     nacos:
       server-addr: localhost:8848
-    loadbalancer:
-      enabled: true
+    openfeign:
+      client:
+        config:
+          userApp:
+            url: http://localhost:9992/user
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/after_life?serverTimezone=Asia/Shanghai
+    username: root
+    password: root

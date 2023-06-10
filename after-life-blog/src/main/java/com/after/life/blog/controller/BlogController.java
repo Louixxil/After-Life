@@ -1,6 +1,7 @@
 package com.after.life.blog.controller;
 
-import com.after.life.blog.feign.UserClient;
+
+import com.after.life.feign.rpc.UserClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
